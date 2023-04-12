@@ -5,6 +5,6 @@ public class Main {
 
         GradeService service = new GradeService();
 
-        System.out.println(service.getMarAverage());
+        System.out.println(service.getMarkAverage());
     }
 }

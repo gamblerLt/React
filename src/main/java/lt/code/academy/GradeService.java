@@ -6,7 +6,7 @@ public class GradeService {
     public GradeService() {
         markDao = new  InternalMarkDao();
     }
-    public  Double getMarAverage() {
+    public  Double getMarkAverage() {
         return  markDao.getMarks()
                 .stream()
                 .mapToDouble(Double::doubleValue)
