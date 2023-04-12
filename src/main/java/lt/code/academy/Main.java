@@ -1,10 +1,23 @@
 package lt.code.academy;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 public class Main {
     public static void main(String[] args) {
+        Main main = new Main();
+        main.javaMarksAverageDI();
+        main.springMarksAverageDI();
+    }
 
-        GradeService service = new GradeService();
+    private void javaMarksAverageDI() {
+        GradeService gradeService = new GradeService(new InternalMarkDao(), new SimpleService(new AnotherService()));
+        System.out.printf("java marks average: %s%n", gradeService.getMarkAverage());
+    }
 
-        System.out.println(service.getMarkAverage());
+    private void springMarksAverageDI() {
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ApplicationConfig.class);
+        GradeService gradeService = applicationContext.getBean(GradeService.class);
+        System.out.printf("Spring marks average %s%n", gradeService.getMarkAverage());
     }
 }
