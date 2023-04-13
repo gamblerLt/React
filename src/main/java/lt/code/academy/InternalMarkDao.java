@@ -1,7 +1,9 @@
 package lt.code.academy;
 
-import java.util.List;
+import org.springframework.stereotype.Repository;
 
+import java.util.List;
+@Repository // 1 dalis: taip pasakom kad tai springo skoupo dalis
 public class InternalMarkDao implements MarkDao{
     @Override
     public List<Double> getMarks() {
