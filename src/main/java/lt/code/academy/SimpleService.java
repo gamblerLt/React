@@ -7,7 +7,8 @@ public class SimpleService {
     private final AnotherService anotherService;
 
     public SimpleService(AnotherService anotherService){
-        this.anotherService =anotherService;
+
+        this.anotherService = anotherService;
     }
 
     public void sayHi() {

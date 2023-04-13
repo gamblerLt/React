@@ -1,12 +1,26 @@
 package lt.code.academy;
 
+import lt.code.academy.config.ApplicationConfig;
+import lt.code.academy.repository.InternalMarkDao;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 public class Main {
     public static void main(String[] args) {
 
-        GradeService service = new GradeService();
+        Main main = new Main();
+        main.javaMarksAverageDI();
+        main.springMarksAverageDI();
+    }
 
-        System.out.println(service.getMarkAverage());
+    private void javaMarksAverageDI() {
+        GradeService gradeService = new GradeService(new InternalMarkDao(), new SimpleService(new AnotherService()));
+        System.out.printf("java marks average: %s%n", gradeService.getMarkAverage());
+    }
 
-        System.out.println("Hi from ultimate");
+    private void springMarksAverageDI() {
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ApplicationConfig.class);
+        GradeService gradeService = applicationContext.getBean(GradeService.class);
+        System.out.printf("Spring marks average: %s%n", gradeService.getMarkAverage());
     }
 }

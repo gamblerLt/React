@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf0ee027-0cb3-447f-957d-0ecaec7fef3e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lt/code/academy/AnotherService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lt/code/academy/AplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lt/code/academy/SimpleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/code/academy/aspect/MyFirstAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/code/academy/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lt/code/academy/repository/NewInternalMarkDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/code/academy/GradeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/code/academy/GradeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lt/code/academy/InternalMarkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/code/academy/InternalMarkDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/code/academy/AnotherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/code/academy/AnotherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/code/academy/AplicationConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/code/academy/InternalMarkDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/code/academy/repository/InternalMarkDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lt/code/academy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/code/academy/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lt/code/academy/SimpleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lt/code/academy/SimpleService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +30,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -37,7 +41,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2OJQdrmllI8egFT7vnUCmyJkJor" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,6 +52,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/HasPe/Documents/GitHub/React",
@@ -62,7 +69,7 @@
       <module name="React" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lt.code.academy.*" />
+          <option name="PATTERN" value="lt.code.academy.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,5 +97,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
